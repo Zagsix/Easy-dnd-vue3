@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         showDragImage() {
-            return this.dragInProgress && this.typeAllowed && this.$scopedSlots['drag-image'];
+            return this.dragInProgress && this.typeAllowed && this.$refs['drag-image'];
         }
     }
 }
